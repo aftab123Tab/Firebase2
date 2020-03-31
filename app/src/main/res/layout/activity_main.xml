@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Document ID"
+        android:textStyle="bold"
+        android:id="@+id/documentID"
+        android:layout_marginStart="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/documentID"
+        android:id="@+id/documentIDET"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter the document id"
+        android:inputType="text"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textColorHint="@color/colorPrimary"
+        />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City Name"
+        android:id="@+id/cityName"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/documentIDET"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/cityName"
+        android:id="@+id/cityNameET"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter the city name"
+        android:inputType="text"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textColorHint="@color/colorPrimary"
+        />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City Details"
+        android:id="@+id/cityDetails"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/cityNameET"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/cityDetails"
+        android:id="@+id/Details"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter the city details"
+        android:inputType="text"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textColorHint="@color/colorPrimary"
+        />
+
+
+    <Button
+
+        android:layout_below="@id/Details"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:text="Add Values"
+        android:textSize="10sp"
+        android:onClick="addValues"
+        android:id="@+id/g"
+        />
+
+    <Button
+        android:layout_below="@id/g"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Collection Delete "
+        android:onClick="deldoc"
+        android:textSize="10sp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/q"
+        />
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/q"
+        android:layout_below="@id/g"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="update value  "
+        android:onClick="updatevaluefirebase"
+        android:textSize="10sp"
+        android:id="@+id/q6"
+        android:layout_marginRight="15dp"
+        />
+
+    <Button
+
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/q4"
+        android:layout_below="@+id/q"
+        android:layout_centerInParent="true"
+        android:text="Delete Vale"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:onClick="delvalue"
+        />
+    <Button
+        android:layout_below="@id/q4"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="Show collection  "
+        android:onClick="showdata"
+        android:textSize="10sp"
+        android:id="@+id/q2"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ValuesTv"
+        android:layout_below="@+id/q2"
+        android:textSize="20sp"
+        />
+
+
+</RelativeLayout>
